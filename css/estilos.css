@@ -9,7 +9,7 @@
 }
 
 body{
-	background: #f2f2f2;
+	background: #CBCBCB;
 	color: black;
 	font-size: 16px;
 	font-family: sans-serif;
@@ -45,8 +45,8 @@ h1 {
    text-decoration: none;
    text-shadow: 1px 1px 2px white, 0 0 30px #02010a;
    font-family: 'FreeSans';
-  font-variant: small-caps;
-  font-weight: bold;
+   font-variant: small-caps;
+   font-weight: bold;
 }
 
 /* se modificando El enlace Inicio
@@ -84,36 +84,51 @@ article
 
 	#columna1
 	{
-	background-color: #91C9E8;
+	background-color: #82c3a6;
 	margin-top: 50px;
 	width: 100%;
 
 	}
 	#columna2
 	{
-	background-color: #D1D1D1;
+	background-color:  #d5c75f;
 	margin-top: 50px;
 	width: 50%;
 	}
 	#columna3
 	{
-	background-color: #3399CC;
+	background-color:  #d5c75f;
 	margin-top: 50px;
 	width: 50%;
 	}
 
 	footer{
-		font-size: 0.8em;
+		font-size: 0.2em;
 		border-top: solid 2px #999898;
 		padding-top: 1vw;
 		margin-top: 1vw;
 		text-align: center;
 	    clear: both;
-	    height: 120px;
+	    height: 100%;
 	    width: 100%;
 	    background-color: #E5E5E5;
 	    margin-top: 80%;
 	}
+
+	a[href^='#']{
+      color: red;
+   }
+
+   img[src$='.svg']{
+     border-radius: 50%;
+     margin-left: 1%;
+   }
+
+
+img[src$='jpg'],img[src$='png']{
+  border: 1px solid black;
+  border-radius: 500%;
+}
 
 
 @media screen and (max-width: 960px){
