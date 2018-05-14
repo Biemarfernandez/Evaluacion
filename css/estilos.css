@@ -1,0 +1,161 @@
+@font-face {
+  font-family: 'FreeSans';
+  src: url('FreeSans.otf');
+}
+
+*
+{
+	margin:0;
+}
+
+body{
+	background: #f2f2f2;
+	color: black;
+	font-size: 16px;
+	font-family: sans-serif;
+}
+
+#wrapper
+{
+	width: 1150px;
+	margin: 0 auto;
+}
+
+header {
+	padding: 3vh 1vw;
+	margin-bottom: 1vh;
+	background-color: #5b7989;
+	border-top-right-radius: 1vh;
+	border-top-left-radius: 1vh;
+	color:white;
+	display: flex;
+	justify-content: space-between;
+}
+
+header h1, nav {
+	text-transform: capitalize;
+	padding-left: 1%;
+	font-size: 1.9em;
+	float: left;
+	
+}
+
+h1 {
+   padding: 0 4px;
+   text-decoration: none;
+   text-shadow: 1px 1px 2px white, 0 0 30px #02010a;
+   font-family: 'FreeSans';
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+/* se modificando El enlace Inicio
+----------------------------------------------------------------------*/
+.none {
+	text-decoration: none;
+	color:white;
+	text-shadow: 1px 1px 3px white, 0 0 30px #02010a;
+    font-family: 'FreeSans';
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* se personaliza los 2 elaces  Paisajes y Retratos
+----------------------------------------------------------------------*/
+
+a {
+	text-shadow: 1px 1px 3px white, 0 0 30px #080808;
+    font-family: 'FreeSans';
+    font-variant: small-caps;
+    font-weight: bold;
+	color:white;
+}
+
+article
+{
+	box-sizing: border-box;
+	float:left;
+	height: 100%;
+	background-color: grey;
+	padding: 2%;
+	text-align: center;
+	height: 400px;
+}
+
+	#columna1
+	{
+	background-color: #91C9E8;
+	margin-top: 50px;
+	width: 100%;
+
+	}
+	#columna2
+	{
+	background-color: #D1D1D1;
+	margin-top: 50px;
+	width: 50%;
+	}
+	#columna3
+	{
+	background-color: #3399CC;
+	margin-top: 50px;
+	width: 50%;
+	}
+
+	footer{
+		font-size: 0.8em;
+		border-top: solid 2px #999898;
+		padding-top: 1vw;
+		margin-top: 1vw;
+		text-align: center;
+	    clear: both;
+	    height: 120px;
+	    width: 100%;
+	    background-color: #E5E5E5;
+	    margin-top: 80%;
+	}
+
+
+@media screen and (max-width: 960px){
+
+	#wrapper
+	{
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 640px){
+
+	#wrapper
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 480px){
+
+#wrapper
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+	#columna1
+	{
+	width: 100%;
+	}
+	#columna2
+	{
+	width: 100%;
+	}
+	#columna3
+	{
+	width: 100%;
+	}
+
+	header
+	{
+	width:100%;
+	}
+}
