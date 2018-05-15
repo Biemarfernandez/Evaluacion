@@ -3,27 +3,23 @@
   src: url('FreeSans.otf');
 }
 
-*
-{
-	margin:0;
-}
-
 body{
 	background: #CBCBCB;
 	color: black;
 	font-size: 16px;
-	font-family: sans-serif;
+	font-family: Indie Flower;
 }
 
 #wrapper
 {
-	width: 1150px;
+	width: 93%;
 	margin: 0 auto;
 }
 
 header {
-	padding: 3vh 1vw;
+	padding: 4vh 2vw;
 	margin-bottom: 1vh;
+	margin-top: 3%;
 	background-color: #5b7989;
 	border-top-right-radius: 1vh;
 	border-top-left-radius: 1vh;
@@ -76,14 +72,14 @@ article {
 	float:left;
 	height: 100%;
 	background-color: grey;
-	padding: 2%;
+	padding: 3%;
 	text-align: center;
-	height: 400%;
+	height: 100%;
 }
 
 #columna1 {
 	background-color: #82c3a6;
-	margin-top: 50px;
+	margin-top: -1%;
 	width: 100%;
 
 }
@@ -98,7 +94,6 @@ article {
 
 #columna2 {
 	background-color:  #d5c75f;
-	margin-top: 50px;
 	width: 50%;
 	border: 1px;
 }
@@ -121,21 +116,20 @@ article {
 
 #columna3 {
 	background-color:  #d5c75f;
-	opacity: 0.1;
-	transition: opacity 1s;
-	margin-top: 50px;
 	width: 50%;
 }
 
 /* personalizando imagen columna3{}
 ----------------------------------------------------------------------*/
 .img-adaptativo3 {
+	opacity: 0.1;
+	transition: opacity 1s;
 	box-shadow:  4px 4px #82c3a6;
 	width: 100%;
 	top: 200%;
 }
 
-#columna3:hover {
+.img-adaptativo3:hover {
 	opacity: 1;
 }
 
@@ -145,27 +139,39 @@ footer {
 	border-top: solid 2px #999898;
 	padding-top: 1vw;
 	margin-top: 1vw;
-	text-align: center;
+	text-align: left;
 	clear: both;
 	height: 100%;
 	width: 100%;
 	background-color: #E5E5E5;
-	margin-top: 80%;
+	margin-top: 0%;
+}
+
+/* agregando contactos y politicas
+----------------------------------------------------------------------*/
+div#derecha {
+	box-sizing: border-box;
+	float:left;
+	height: 100%;
+	padding: 3%;
+	text-align: center;
+	height: 100%;
 }
 
 a[href^='#'] {
       color: red;
  }
 
-img#iconos-adaptativos[src$='.svg'] {
+img[src$='.svg'] {
 	-webkit-transition: -webkit-transform 1s ease-out;
     -moz-transition: -moz-transform 1s ease-out;
     transition: transform 1s ease-out;
     border-radius: 50%;
     margin-left: 1%;
+    box-shadow: 0 0 11px 3px black;
 }
 
-img#iconos-adaptativos:hover[src$='.svg'] {
+img:hover[src$='.svg'] {
 	-webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     transform: rotate(360deg);
@@ -174,10 +180,10 @@ img#iconos-adaptativos:hover[src$='.svg'] {
 
 
 
-img#iconos-adaptativos[src$='jpg'],img#iconos-adaptativos[src$='png'] {
+/*img#iconos-adaptativos[src$='jpg'],img#iconos-adaptativos[src$='png'] {
   border: 1px solid black;
   border-radius: 500%;
-}
+}*/
 
 
 @media screen and (max-width: 960px){
