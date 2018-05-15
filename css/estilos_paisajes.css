@@ -1,0 +1,200 @@
+@font-face {
+  font-family: 'FreeSans';
+  src: url('FreeSans.otf');
+}
+
+body {
+	font-family: Indie Flower;
+	background: #CBCBCB;
+	color: black;
+	font-size: 16px;
+}
+
+.container {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+    margin-top: 3%;
+}
+
+.container div {
+	box-sizing: border-box;
+	min-width: 150px;
+	padding: 20px;
+}
+
+h1 {
+   padding: 0 4px;
+   text-decoration: none;
+   text-shadow: 1px 1px 2px white, 0 0 30px #02010a;
+   font-family: 'FreeSans';
+   font-variant: small-caps;
+   font-weight: bold;
+}
+
+.none {
+	text-decoration: none;
+	color:white;
+	text-shadow: 1px 1px 3px white, 0 0 30px #02010a;
+    font-family: 'FreeSans';
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+em {
+	color: white;
+}
+
+
+.c1 {
+	color: black;
+	background-color: #5b7989;
+}
+
+.c2 {
+	color: black;
+	background-color: #F4F1BB;
+}
+
+
+/* imagen 3 agregando defecto blur
+----------------------------------------------------------------------*/
+.c3 {
+	color: black;
+	background-color: #9BC1BC;
+}
+
+.c3 img{
+	transition-property: border;
+	transition-duration: 0.5s;
+}
+
+.c3 img:hover {
+	border: solid 4px black;
+}
+
+
+/* aplicando defecto griset a c4, c6, c8 {
+	
+}
+----------------------------------------------------------------------*/
+
+.c4 {
+	color: black;
+	background-color: #36C9C6;
+}
+
+
+/* agregando imagen sepia c5 {
+	
+}
+----------------------------------------------------------------------*/
+
+.c5 {
+	color: white;
+	background-color: #ED6A5A;
+}
+
+.c5 img {
+	-webkit-filter: sepia(90%);
+}
+
+/*C4*/
+.c6 {
+	color: black;
+	background-color: #9BC1BC;
+}
+
+.c7 {
+	color: black;
+	background-color: #36C9C6;
+}
+
+
+/*c8*/
+.c8 {
+	color: white;
+	background-color: #ED6A5A;
+}
+
+.c4 img, .c6 img, .c8 img {
+	filter:  grayscale(100%);
+    transition-property: filter;
+    transition-duration: 1s;
+}
+
+.container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+.c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8 {
+    width: 100%;
+}
+
+img[src$='.jpg'] {
+	width: 100%;
+}
+
+
+footer {
+	font-size: 0.2em;
+	border-top: solid 2px #999898;
+	padding-top: 1vw;
+	margin-top: 1vw;
+	text-align: left;
+	clear: both;
+	height: 100%;
+	width: 100%;
+	background-color: #E5E5E5;
+	margin-top: 0%;
+}
+
+a[href^='#'] {
+      color: red;
+ }
+
+img[src$='.svg'] {
+	-webkit-transition: -webkit-transform 1s ease-out;
+    -moz-transition: -moz-transform 1s ease-out;
+    transition: transform 1s ease-out;
+    border-radius:  50%;
+    margin-left: 1%;
+    box-shadow: 0 0 11px 3px black;
+}
+
+
+img:hover[src$='.svg'] {
+	-webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+
+@media (min-width: 600px) {
+	.c2, .c3, .c4, .c5, .c6, .c7, .c8 {
+		width: 50%
+	}
+}
+
+@media (min-width: 800px) {
+	.c1{
+		width: 100%;
+	}
+
+	.c2{
+		width: 100%;
+	}
+
+	.c3, .c4, .c5, .c6, .c7, .c8 {
+		width: 33.33%;
+	}
+
+	.container{
+		width: 93%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
